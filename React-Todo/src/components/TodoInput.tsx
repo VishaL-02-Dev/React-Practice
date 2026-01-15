@@ -13,7 +13,7 @@ export function TodoInput({onAdd}: TodoInputProps){
     };
 
     return (
-        <div>
+        <div className="todo-input">
             <input
                 type= "text"
                 value={text}
