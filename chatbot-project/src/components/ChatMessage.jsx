@@ -1,5 +1,5 @@
-import { RobotProfile } from '../assets/robot.png'
-import { UserProfile } from '../assets/user.png'
+import  RobotProfile  from '../assets/robot.png'
+import UserProfile  from '../assets/user.png'
 
 export function ChatMessage({ msg, sender }) {
   // const msg = props.msg;
