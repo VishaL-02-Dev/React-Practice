@@ -21,7 +21,8 @@ function App(){
     );
     
     if(isDuplicate){
-      alert("Todo already exists!")
+      alert("Todo already exists!");
+      return;
     }
 
     setTodos([
