@@ -1,11 +1,11 @@
 import type { Todo } from '../types/todo'
-import type { useState } from 'react'
+import { useState } from 'react'
 
 interface TodoItemProps {
     todo: Todo;
     onToggle: (id: string) => void;
     onDelete: (id: string) => void;
-    onEdit: (id: stirng) => void;
+    onEdit: (id: string, text: string) => void;
 }
 
 export function TodoItem({ todo, onToggle, onDelete, onEdit }: TodoItemProps) {

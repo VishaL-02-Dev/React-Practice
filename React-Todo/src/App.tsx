@@ -46,6 +46,14 @@ function App(){
     setTodos(todos.filter(todo=>todo.id !==id));
   };
 
+  const editTodo = (id: string, newText: string)=>{
+    setTodos(
+      todos.map(todo=>
+        todo.id === id ? {...todo, text: newText} : todo
+      )
+    );
+  };
+
   return (
     <div className='app'>
       <h1>Todo App</h1>
@@ -54,6 +62,7 @@ function App(){
         todos = {todos}
         onToggle = {toggleTodo}
         onDelete = {deleteTodo}
+        onEdit = {editTodo}
       />
     </div>
   );
